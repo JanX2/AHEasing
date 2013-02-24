@@ -22,7 +22,6 @@
 {
 	PlaygroundNSViewController *vc = [[PlaygroundNSViewController alloc] initWithNibName:@"PlaygroundView" bundle:nil];
 	[self.window.contentView addSubview:vc.view];
-	self.vc = vc;
 }
 
 @end
