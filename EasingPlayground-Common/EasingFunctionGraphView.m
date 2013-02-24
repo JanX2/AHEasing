@@ -110,6 +110,10 @@
 
 	CGContextSetStrokeColorWithColor(context, lightGray);
 	
+#if !TARGET_OS_IPHONE
+	CGColorRelease(lightGray);
+#endif
+	
 	// Draw vertical gridlines
 	CGFloat gridLineX = 0.0;
 	while(gridLineX <= 1.01)
@@ -150,6 +154,11 @@
 	CGContextSetLineJoin(context, kCGLineJoinRound);
 	CGContextSetStrokeColorWithColor(context, black);
 	CGContextStrokePath(context);
+
+#if !TARGET_OS_IPHONE
+	CGColorRelease(black);
+#endif
+	
 }
 
 @end
