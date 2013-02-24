@@ -30,7 +30,6 @@
 		804527B916A63528001DB532 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 804527B816A63528001DB532 /* QuartzCore.framework */; };
 		804527BC16A63724001DB532 /* PlaygroundView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 804527BA16A63724001DB532 /* PlaygroundView.xib */; };
 		804527BF16A63736001DB532 /* PlaygroundView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 804527BD16A63736001DB532 /* PlaygroundView.xib */; };
-		804527C216A668BF001DB532 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 804527C116A668BF001DB532 /* CoreGraphics.framework */; };
 		804527C616A668D6001DB532 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 804527C516A668D6001DB532 /* AppKit.framework */; };
 		804527CA16A66A6F001DB532 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 804527C816A66A6F001DB532 /* Icon.png */; };
 		804527CB16A66A6F001DB532 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 804527C916A66A6F001DB532 /* Icon@2x.png */; };
@@ -101,7 +100,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				804527C616A668D6001DB532 /* AppKit.framework in Frameworks */,
-				804527C216A668BF001DB532 /* CoreGraphics.framework in Frameworks */,
 				804527B716A6351A001DB532 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -463,12 +461,12 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SYSTEM_APPS_DIR)/Xcode46-DP4.app/Contents/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -481,7 +479,7 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = NO;
 				INFOPLIST_FILE = "EasingPlayground-Mac/EasingPlayground-Mac-Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -503,13 +501,12 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SYSTEM_APPS_DIR)/Xcode46-DP4.app/Contents/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
 				);
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -518,9 +515,8 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = NO;
 				INFOPLIST_FILE = "EasingPlayground-Mac/EasingPlayground-Mac-Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
 			};
@@ -536,7 +532,6 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
@@ -553,7 +548,6 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
@@ -573,6 +567,7 @@
 				8045278D16A63162001DB532 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		804527A716A6318C001DB532 /* Build configuration list for PBXNativeTarget "EasingPlayground-Mac" */ = {
 			isa = XCConfigurationList;
@@ -581,6 +576,7 @@
 				804527A916A6318C001DB532 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		806EB7E5138F91A700E2D4A7 /* Build configuration list for PBXProject "AHEasing" */ = {
 			isa = XCConfigurationList;
